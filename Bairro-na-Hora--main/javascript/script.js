@@ -18,4 +18,3 @@ var menubb = document.querySelector('.menu-lateral')
 botaoexp.addEventListener('click', function () {
   menubb.classList.toggle('expandir')
 })
-
