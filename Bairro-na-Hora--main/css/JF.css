@@ -1,0 +1,207 @@
+body {
+    background-color: #d5f0f5;
+    height: 100vh;
+
+}
+
+
+
+nav.menu-lateral {
+    width: 50px;
+    height: 100%;
+    background-color: #0f3759;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #1B4BF7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+/* menu de escolha */
+ul {
+
+    list-style-type: none;
+
+}
+
+ul li.ativo {
+    background-color: #1B4BF7;
+}
+
+ul li.item-menu:hover {
+    background-color: #1B4BF7;
+    transition: 0.7s;
+}
+
+ul li.item-menu a {
+    padding: 20px 4%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>img {
+    font-size: 100px;
+    margin-left: 1px;
+}
+
+
+
+/* rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2f5c85;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+footer .rodape,
+footer .numero,
+footer .objetivos {
+    margin-bottom: 20px;
+}
+
+footer .rodape h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+footer .numero p,
+footer .objetivos ul {
+    margin: 5px 0;
+}
+
+footer .objetivos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .linha {
+    margin-top: 20px;
+}
+.inico {
+    background-color: #2f5c85 ;
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    height: 200px;
+    width: 100%;
+}
+
+.inico p{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.inico input {
+    border-radius: 10px ;
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.noticias {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+.noticias img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+.container-text {
+    position: relative;
+    display: inline-block;
+ 
+}
+.ocult-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    display: none;
+    color: white;
+    text-align: center;
+    top: 90%;
+    bottom: 10%;
+    left: 40%;
+    right: 60%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.container-text:hover .ocult-text {
+    display: block;
+    opacity: 1;
+    animation: fadeInText 1s forwards;
+}
+.linha-final {
+    background-color: rgb(255, 0, 0);
+    border: 10px;
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(o.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 50%) scale(1);
+    }
+}
