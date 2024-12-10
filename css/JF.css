@@ -1,35 +1,125 @@
-header {
-    background-color: #0f3759;
-    position: fixed;
-    height: 100%;
-    width: 5%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-
-    color: white;
-    
-}
 body {
     background-color: #d5f0f5;
+    height: 100vh;
+
 }
-.logo {
-    border-radius: 50%;
-    height: 50px;
+
+
+
+nav.menu-lateral {
     width: 50px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 100%;
+    background-color: #0f3759;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #1B4BF7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
 }
-.logodois {
-    align-content: end;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
+nav.menu-lateral.expandir {
+    width: 300px;
+
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+/* menu de escolha */
+ul {
+
+    list-style-type: none;
+
+}
+
+ul li.ativo {
+    background-color: #1B4BF7;
+}
+
+ul li.item-menu:hover {
+    background-color: #1B4BF7;
+    transition: 0.7s;
+}
+
+ul li.item-menu a {
+    padding: 20px 4%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>img {
+    font-size: 100px;
+    margin-left: 1px;
+}
+
+
+
+/* rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2f5c85;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+footer .rodape,
+footer .numero,
+footer .objetivos {
+    margin-bottom: 20px;
+}
+
+footer .rodape h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+footer .numero p,
+footer .objetivos ul {
+    margin: 5px 0;
+}
+
+footer .objetivos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .linha {
+    margin-top: 20px;
 }
